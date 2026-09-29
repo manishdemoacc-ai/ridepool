@@ -1,0 +1,15 @@
+:root{--ink:#10222b;--teal:#0f8b8d;--deep:#0b3b40;--amb:#f5a524;--bg:#e9eff2;--card:#fff;--mut:#5a6f77}
+*{box-sizing:border-box}body{margin:0;font:15px/1.45 'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+.app{max-width:1100px;margin:0 auto;padding:10px 12px 84px}h1{font-size:20px;margin:6px 0}h2{font-size:16px;margin:4px 0 8px}
+.card{background:var(--card);border-radius:14px;padding:12px;margin:10px 0;box-shadow:0 1px 8px #0b3b4018;border:1px solid #d5e0e5}
+.glass{background:#ffffffcc;backdrop-filter:blur(10px)}.map{height:300px;border-radius:14px;z-index:0}
+.grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}label{font-size:13px;color:var(--mut);display:block}
+select,input{width:100%;padding:9px;border:1px solid #b9c9cf;border-radius:10px;font:inherit;background:#fff}
+button{font:inherit;border:0;border-radius:12px;padding:10px 14px;background:var(--deep);color:#fff;cursor:pointer;min-height:44px}button.alt{background:#e2ecef;color:var(--ink)}button.amb{background:var(--amb);color:#231500;font-weight:700}button.sel{outline:3px solid var(--amb)}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--amb);outline-offset:2px}button:disabled{opacity:.5}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.pill{padding:2px 9px;border-radius:99px;background:#dff1f1;color:var(--deep);font-size:12px}.big{font-size:32px;font-weight:800;color:var(--deep)}
+.bar{height:8px;border-radius:9px;background:#e2ecef;overflow:hidden}.bar i{display:block;height:100%;background:var(--teal)}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:#fffffff0;backdrop-filter:blur(12px);border-top:1px solid #cfdbe0;padding-bottom:env(safe-area-inset-bottom);z-index:1000}nav button{flex:1;background:none;color:var(--mut);border-radius:0}nav button.on{color:var(--deep);font-weight:700;box-shadow:inset 0 3px var(--amb)}
+.err{border-left:5px solid #c2410c}.toast{position:fixed;top:10px;right:10px;left:10px;max-width:380px;margin-left:auto;z-index:2000}.toast div{background:var(--deep);color:#fff;padding:10px 12px;border-radius:12px;margin-bottom:6px}
+.two{display:grid;gap:12px;grid-template-columns:1fr}@media(min-width:900px){.two{grid-template-columns:1.1fr 1fr}.map{height:420px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
